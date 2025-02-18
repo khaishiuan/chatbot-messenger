@@ -1,0 +1,267 @@
+.flow-builder {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-right: 1px solid #dee2e6;
+}
+
+.flow-container {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.properties-panel {
+  width: 300px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 1px solid #dee2e6;
+}
+
+.node-item {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: move;
+  background-color: white;
+}
+
+.node-item:hover {
+  background-color: #e9ecef;
+}
+
+.description {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.message-node,
+.condition-node,
+.action-node {
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.message-node {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+}
+
+.condition-node {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+}
+
+.action-node {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.content textarea,
+.content select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.property {
+  margin-bottom: 15px;
+}
+
+.property label {
+  display: block;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+.property input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.trigger-node {
+  background-color: #e8eaf6;
+  border: 1px solid #c5cae9;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.trigger-type-select {
+  margin-bottom: 8px;
+}
+
+.trigger-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.schedule-inputs {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.schedule-inputs input,
+.schedule-inputs select {
+  flex: 1;
+}
+
+.node-button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.node-button:hover {
+  background-color: #e9ecef;
+}
+
+.node-button.trigger-item {
+  background-color: #e8eaf6;
+  border-color: #c5cae9;
+}
+
+.node-button.trigger-item:hover {
+  background-color: #c5cae9;
+}
+
+.node-category {
+  margin-bottom: 20px;
+}
+
+.node-category h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.question-node {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.options-container {
+  margin-top: 10px;
+}
+
+.option-item {
+  margin-bottom: 8px;
+}
+
+.add-option-btn {
+  width: 100%;
+  padding: 6px;
+  background-color: #e9ecef;
+  border: 1px dashed #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message-type-select {
+  margin-bottom: 10px;
+}
+
+.carousel-items {
+  margin-top: 10px;
+  border: 1px dashed #ced4da;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.node-button.message-item {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.node-button.question-item {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.node-button.integration-item {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.delay-node {
+  background-color: #e2e3e5;
+  border: 1px solid #d6d8db;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.delay-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.delay-inputs input {
+  width: 80px;
+}
+
+.delay-inputs select {
+  flex: 1;
+}
+
+.integration-node {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.integration-type-select {
+  margin-bottom: 8px;
+}
+
+.node-button.delay-item {
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+
+.node-button.condition-item {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.node-button.action-item {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+} 
