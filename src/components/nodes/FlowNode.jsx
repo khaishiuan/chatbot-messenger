@@ -1,7 +1,6 @@
 // server.js
 const express = require('express');
 const bodyParser = require('body-parser');
-const fetch = require('node-fetch'); // For sending messages back to Messenger
 const app = express();
 const PORT = process.env.PORT || 3000;
 
